@@ -1,21 +1,10 @@
 spring:
   application:
-    name: hello-spring-cloud-config
-  cloud:
-    config:
-      label: master
-      server:
-        git:
-          uri: https://github.com/pankaizhang/spring-cloud-config
-          search-paths: repos
-          username:
-          password:
-
+    name: hello-spring-cloud-service-admin
 server:
-  port: 8888
-
+  port: 8762
 
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+    client:
+      serviceUrl:
+defaultZone: http://localhost:8761/eureka/
